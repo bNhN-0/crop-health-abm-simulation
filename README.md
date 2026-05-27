@@ -396,6 +396,27 @@ notebooks/03_modeling_and_results.ipynb
 
 ---
 
+## NetLogo Agent-Based Simulation
+
+This project includes a NetLogo ABM visualization for crop health simulation. Each dataset row is loaded as a crop agent from `crop_abm_dataset.csv`. The model uses `i1`-`i9` crop/environment indicators, computes layered crop-health states, and updates long-term crop viability over simulation steps.
+
+Crop color is based on `LCv`:
+
+- Green: Healthy
+- Yellow: Moderate
+- Orange: Warning
+- Red: Critical
+
+How to run:
+
+1. Open `simulation/crop_model.nlogox` in NetLogo.
+2. Keep `crop_abm_dataset.csv` in the same `simulation/` folder.
+3. Select a crop type or choose `all`.
+4. Click `setup`, then `go`.
+
+
+---
+
 ## Repository Structure
 
 ```txt
@@ -417,6 +438,9 @@ smart-farming-crop-health/
 ├── results/
 │   └── figures/
 ├── data/
+├── simulation/
+│   └──crop_abm_dataset.csv
+│   └──crop_model.nlogox
 ├── requirements.txt
 └── .gitignore
 ```
